@@ -51,6 +51,18 @@ async function runIncrementalMigrations(env) {
   if (!categoryCols.has('parent_id')) {
     alterStatements.push(env.NAV_DB.prepare('ALTER TABLE category ADD COLUMN parent_id INTEGER DEFAULT 0'));
   }
+  if (!sitesCols.has('is_pinned')) {
+    alterStatements.push(env.NAV_DB.prepare('ALTER TABLE sites ADD COLUMN is_pinned INTEGER DEFAULT 0'));
+  }
+  if (!sitesCols.has('pin_order')) {
+    alterStatements.push(env.NAV_DB.prepare('ALTER TABLE sites ADD COLUMN pin_order INTEGER DEFAULT 0'));
+  }
+  if (!pendingCols.has('is_pinned')) {
+    alterStatements.push(env.NAV_DB.prepare('ALTER TABLE pending_sites ADD COLUMN is_pinned INTEGER DEFAULT 0'));
+  }
+  if (!pendingCols.has('pin_order')) {
+    alterStatements.push(env.NAV_DB.prepare('ALTER TABLE pending_sites ADD COLUMN pin_order INTEGER DEFAULT 0'));
+  }
 
   for (const statement of alterStatements) {
     try {
