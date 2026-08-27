@@ -39,8 +39,12 @@ CREATE TABLE IF NOT EXISTS sites (
   desc TEXT,
   catelog_id INTEGER NOT NULL,
   catelog_name TEXT,
+  is_pinned INTEGER DEFAULT 0,
+  pin_order INTEGER DEFAULT 0,
   sort_order INTEGER NOT NULL DEFAULT 9999,
   is_private INTEGER DEFAULT 0,
+  is_pinned INTEGER DEFAULT 0,
+  pin_order INTEGER DEFAULT 0,
   create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
@@ -53,6 +57,8 @@ CREATE TABLE IF NOT EXISTS pending_sites (
   desc TEXT,
   catelog_id INTEGER NOT NULL,
   catelog_name TEXT,
+  is_pinned INTEGER DEFAULT 0,
+  pin_order INTEGER DEFAULT 0,
   create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
@@ -62,6 +68,8 @@ CREATE TABLE IF NOT EXISTS category (
   sort_order INTEGER NOT NULL DEFAULT 9999,
   parent_id INTEGER DEFAULT 0,
   is_private INTEGER DEFAULT 0,
+  is_pinned INTEGER DEFAULT 0,
+  pin_order INTEGER DEFAULT 0,
   create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
