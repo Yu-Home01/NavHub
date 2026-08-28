@@ -61,7 +61,7 @@ https://navhub.niceone2.ccwu.cc/
 - 🖼️ **Logo 自动生成**：默认使用 [faviconsnap.com](https://faviconsnap.com) 接口，可在环境变量中自定义。
 - 📦 **导入导出数据**：提供书签数据的导入与导出，支持 Chrome 导出的 HTML 格式一键导入。
 
-## ✨ 本项目[NavHub](https://github.com/Yu-Home01/NavHub) 新增功能
+## ✨ 本项目[NavHub](https://github.com/Yu-Home01/NavHub) 在原项目基础上新增以下功能
 
 - **Favicon URL 自定义** — 支持自定义网站图标，支持本地图片上传，使标签页更具个性化
 - **GitHub 链接自定义** — 导航页页脚 GitHub 图标链接可自定义配置
