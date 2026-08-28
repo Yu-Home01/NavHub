@@ -37,7 +37,31 @@ https://navhub.niceone2.ccwu.cc/
 
 ---
 
-## ✨ 新增功能
+## ✨原项目[iori-nav](https://github.com/jy02739244/iori-nav)  核心特性
+
+| 特性 | 说明 |
+| :--- | :--- |
+| 📱 **响应式设计** | 完美适配桌面、平板和手机等各种设备 |
+| 🎨 **主题美观** | 界面简洁优雅，支持自定义主色调与夜间模式 |
+| 🔍 **快速搜索** | 内置站内模糊搜索，迅速定位所需网站 |
+| 📂 **分类清晰** | 通过多级分类组织书签，浏览直观高效 |
+| 🔒 **安全后台** | 基于 KV 的管理员认证，提供完整的书签增删改查后台 |
+| 📝 **用户提交** | 支持访客提交书签，经管理员审核后显示（可通过环境变量关闭） |
+| ⚡ **性能卓越** | 利用 Cloudflare 边缘缓存，秒级加载，节省 D1 数据库读取成本 |
+| 📤 **数据管理** | 支持书签数据的导入与导出，兼容 Chrome 导出的 HTML 格式 |
+
+---
+
+## 🔄 原项目[iori-nav](https://github.com/jy02739244/iori-nav) 版本亮点
+
+- 🛡️ **后台会话安全升级**：登录 `/admin` 后将颁发 HttpOnly 会话 Cookie（默认 1 天，可选 1/7/30/60/90 天），凭据不再暴露在 URL 中，并新增一键退出登录。
+- 🧹 **输入与展示双重校验**：新增 URL 规范化、HTML 转义与排序值归一化逻辑，前后台同时防止脏数据和潜在 XSS。
+- 🔐 **访客投稿可控**：通过 `ENABLE_PUBLIC_SUBMISSION` 环境变量即可关闭前台投稿入口，相关接口自动返回 403。
+- 🤖 **AI 一键自动生成描述**：提供 Workers AI、Google Gemini 和 OpenAI 接口。
+- 🖼️ **Logo 自动生成**：默认使用 [faviconsnap.com](https://faviconsnap.com) 接口，可在环境变量中自定义。
+- 📦 **导入导出数据**：提供书签数据的导入与导出，支持 Chrome 导出的 HTML 格式一键导入。
+
+## ✨ 本项目[NavHub](https://github.com/Yu-Home01/NavHub) 新增功能
 
 - **Favicon URL 自定义** — 支持自定义网站图标，支持本地图片上传，使标签页更具个性化
 - **GitHub 链接自定义** — 导航页页脚 GitHub 图标链接可自定义配置
@@ -54,20 +78,22 @@ https://navhub.niceone2.ccwu.cc/
 
 ### 1. Fork 本仓库
 
-点击右上角 ⭐ Star，再点击 **"Fork on GitHub"** 按钮，将仓库复制到你的 GitHub 账号下。
+点击右上角 ⭐ Star，再点击 **"Fork"** 按钮，将仓库复刻到你的 GitHub 账号下。
 
 ### 2. 连接 Cloudflare Pages
 
-1. 登录 [Cloudflare Dashboard](https://dash.cloudflare.com)
-2. 进入 **Pages** → **创建项目** → **连接到 Git**
-3. 选择你 Fork 的 `NavHub` 仓库
-4. 项目名称可以自定义（如 `navhub`）
-5. 生产分支选`main`
-6. 构建设置：
+1.[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github)
+
+点击上方按钮跳转到 Cloudflare，然后选择连接到 GitHub，授权后选择刚才 Fork 的项目。
+[步骤一](./image/部署-1.png)
+
+6. 项目名称可以自定义（如 `navhub`）
+7. 生产分支选`main`
+8. 构建设置：
    - 框架预设：选 `None`或 `无`
    - 构建命令：留空
    - 输出目录：填 `public`
-7. 点击 **保存并部署**
+9. 点击 **保存并部署**
 
 ### 3. 创建 D1 数据库
 
