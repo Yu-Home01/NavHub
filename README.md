@@ -84,21 +84,19 @@ https://navhub.niceone2.ccwu.cc/
 
 [![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github)
 
-点击上方按钮跳转到 Cloudflare，然后选择连接到 GitHub，授权后选择刚才 Fork 的项目。
+点击上方按钮跳转到 Cloudflare，然后选择连接到 GitHub，授权后选择刚才 Fork 的项目。（如下图）
 
 <img width="2252" height="1380" alt="选择项目" src="./image/部署-1.png" />
 
-项目名称可以自定义（如 `navhub`）
+项目名称可以自定义（如 `navhub`），生产分支选`main`，框架预设：选 `None`或 `无`，构建命令：留空，输出目录：填 `public`，最后点击 **保存并部署**。（如下图）
 
 <img width="2252" height="1380" alt="选择项目" src="./image/部署-2.png" />
 
 
-7. 生产分支选`main`
-8. 构建设置：
-   - 框架预设：选 `None`或 `无`
-   - 构建命令：留空
-   - 输出目录：填 `public`
-9. 点击 **保存并部署**
+
+
+
+
 
 ### 3. 创建 D1 数据库
 
