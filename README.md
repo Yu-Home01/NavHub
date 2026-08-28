@@ -86,7 +86,7 @@ https://navhub.niceone2.ccwu.cc/
 
 点击上方按钮跳转到 Cloudflare，然后选择连接到 GitHub，授权后选择刚才 Fork 的项目。
 
-./image/部署-1.png
+<img width="2252" height="1380" alt="选择项目" src="https://github.com/user-attachments/assets/0588e0d0-befb-4962-b422-922a8c895674" />
 
 6. 项目名称可以自定义（如 `navhub`）
 7. 生产分支选`main`
