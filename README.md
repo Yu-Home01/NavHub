@@ -137,6 +137,13 @@ https://navhub.niceone2.ccwu.cc/
 
 <img width="2252" height="1380" alt="重新部署" src="./image/部署-10.png" />
 
+### 6. 绑定域名
+
+最后绑定自己的域名，是项目独具个性，更便于访问：
+点击Pages 项目 → **自定义域** → **设置自定义域** （如下图）
+
+<img width="2252" height="1380" alt="重新部署" src="./image/部署-11.png" />
+
 ---
 
 ## 🔧 环境变量
@@ -167,6 +174,7 @@ https://navhub.niceone2.ccwu.cc/
 - 新增必应搜索
 - 新增自定义头像和 Favicon
 - 运行时自动数据库迁移
+- 更新README.md
 
 ---
 
