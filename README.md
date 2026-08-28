@@ -91,7 +91,7 @@ https://navhub.niceone2.ccwu.cc/
 
 ### 6. 重新部署
 
-完成以上步骤以后，点击Pages 项目 → **部署** → **重新部署**，等待部署完成即可访问。
+完成以上步骤以后，点击Pages 项目 → **部署** → 点击项目最后一次部署条目后面的三个点··· → **重试部署**，等待部署完成即可访问。
 
 
 ---
@@ -138,3 +138,10 @@ MIT
 - [iori-nav](https://github.com/jy02739244/iori-nav) — 原始项目
 - [CloudNav-Oorz](https://github.com/oorzc/CloudNav) — 参考项目
 - [KIMI](https://kimi.moonshot.cn)— 主导技术实现与功能开发
+
+## 📞 联系方式
+
+- **项目作者**：[@Yu](https://github.com/Yu-Home01)
+- **项目链接**：[https://github.com/Yu-Home01/NavHub)](https://github.com/Yu-Home01/NavHub))
+
+<p align="center">如果你喜欢这个项目，请给它一个 ⭐️！</p>
