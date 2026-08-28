@@ -82,10 +82,11 @@ https://navhub.niceone2.ccwu.cc/
 
 ### 2. 连接 Cloudflare Pages
 
-1.[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github)
+[![Deploy to Cloudflare Pages](https://img.shields.io/badge/Deploy-Cloudflare%20Pages-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://dash.cloudflare.com/?to=/:account/pages/new/provider/github)
 
 点击上方按钮跳转到 Cloudflare，然后选择连接到 GitHub，授权后选择刚才 Fork 的项目。
-[步骤一](./image/部署-1.png)
+
+./image/部署-1.png
 
 6. 项目名称可以自定义（如 `navhub`）
 7. 生产分支选`main`
