@@ -88,7 +88,11 @@ https://navhub.niceone2.ccwu.cc/
 
 <img width="2252" height="1380" alt="选择项目" src="./image/部署-1.png" />
 
-6. 项目名称可以自定义（如 `navhub`）
+项目名称可以自定义（如 `navhub`）
+
+<img width="2252" height="1380" alt="选择项目" src="./image/部署-2.png" />
+
+
 7. 生产分支选`main`
 8. 构建设置：
    - 框架预设：选 `None`或 `无`
