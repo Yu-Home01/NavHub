@@ -8,7 +8,7 @@
 
 ## 🌐 在线体验
 
-https://navhub.niceone2.ccwu.cc/
+https://navhub.niceone2.ccwu.cc
 
 ---
 
