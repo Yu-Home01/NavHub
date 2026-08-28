@@ -142,6 +142,6 @@ MIT
 ## 📞 联系方式
 
 - **项目作者**：[@Yu](https://github.com/Yu-Home01)
-- **项目链接**：[https://github.com/Yu-Home01/NavHub)](https://github.com/Yu-Home01/NavHub))
+- **项目链接**：[https://github.com/Yu-Home01/NavHub)](https://github.com/Yu-Home01/NavHub)
 
 <p align="center">如果你喜欢这个项目，请给它一个 ⭐️！</p>
