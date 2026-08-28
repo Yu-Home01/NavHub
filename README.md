@@ -74,7 +74,7 @@ https://navhub.niceone2.ccwu.cc/
 
 ## 🚀 快速部署
 
-基于 Cloudflare 全家桶（Pages + Workers + D1 + KV），零服务器成本。
+## 基于 Cloudflare 全家桶（Pages + Workers + D1 + KV），零服务器成本。 ##
 
 ### 1. Fork 本仓库
 
@@ -90,38 +90,52 @@ https://navhub.niceone2.ccwu.cc/
 
 项目名称可以自定义（如 `navhub`），生产分支选`main`，框架预设：选 `None`或 `无`，构建命令：留空，输出目录：填 `public`，最后点击 **保存并部署**。（如下图）
 
-<img width="2252" height="1380" alt="选择项目" src="./image/部署-2.png" />
-
-
-
-
-
-
+<img width="2252" height="1380" alt="创建Pages" src="./image/部署-2.png" />
 
 ### 3. 创建 D1 数据库
 
-1. 进入 Cloudflare Dashboard → **Workers & Pages** → **D1**
-2. 点击 **创建数据库**，名称可自定义（如 `navhub-d1`）
+1. 在 Cloudflare 页面左侧，点击 **存储和数据库** → **D1 SQLite 数据库**
+2. 点击右上角 **创建数据库**，名称可自定义（如 `navhub-d1`）。（如下图）
+
+<img width="2252" height="1380" alt="创建D1 数据库" src="./image/部署-3.png" />
 
 ### 4. 创建 KV 命名空间
 
-1. Cloudflare Dashboard → **存储和数据库** → **KV**
-2. 点击 **创建命名空间**，名称可自定义：（如 `navhub-kv`）
-3. 创建完成以后会自动来到“KV 对”页面，添加两个条目，用于设置管理后台的 用户名 和 密码：
+1. 在 Cloudflare 页面左侧，点击 **存储和数据库** → **Workers KV**
+2. 点击右上角 **Create Instance**，名称可自定义：（如 `navhub-kv`）。（如下图）
+
+<img width="2252" height="1380" alt="创建Workers KV" src="./image/部署-4.png" />
+
+3. 创建完成以后会自动来到“KV 对”页面，添加两个条目，用于设置管理后台的 用户名 和 密码。（如下图）
    -第一条：密钥框输入`admin_username`  值：（可自定义）【这个就是后台管理员的用户名】
    -第二条：密钥框输入`admin_password`  值：（可自定义）【这个就是后台管理员密码】
 
+<img width="2252" height="1380" alt="创建后台参数" src="./image/部署-5.png" />  
+
 ### 5. 绑定 D1 数据库和 KV 命名空间
-1. 进入 Cloudflare Dashboard → **Workers & Pages**
+1. 在 Cloudflare 页面左侧，点击**计算** → **Workers & Pages**
 2. 点击刚刚创建的 Pages 项目（如 `navhub`） → **设置** → 找到下方**绑定** → 点击右侧**添加**：
-   -选择 D1 数据库： 变量名称填`NAV_DB`，点击下方框内选择刚刚创建的D1数据库（如 `navhub-d1`），然后点击**保存**
-   -继续**添加**选择 KV 命名空间：变量名称填`NAV_AUTH`，点击下方框内选择刚刚创建的KV 空间（如 `navhub-kv`），然后点击**保存**
-   -（可选项，非必须）继续**添加**选择 Workers AI：变量名称填`AI`，然后点击**保存**
+   -选择 D1 数据库： 变量名称填`NAV_DB`，点击下方框内选择刚刚创建的D1数据库（如 `navhub-d1`），然后点击**保存**（如下图）
+
+<img width="2252" height="1380" alt="绑定D1" src="./image/部署-6.png" />
+
+   -继续**添加**选择 KV 命名空间：变量名称填`NAV_AUTH`，点击下方框内选择刚刚创建的KV 空间（如 `navhub-kv`），然后点击**保存** （如下图）
+
+<img width="2252" height="1380" alt="绑定KV" src="./image/部署-7.png" />
+
+   -（可选项，非必须）继续**添加**选择 Workers AI：变量名称填`AI`，然后点击**保存** (如下图）
+
+<img width="2252" height="1380" alt="绑定AI" src="./image/部署-8.png" />
+
+  -以上都绑定完成以后的页面 （如下图）
+
+<img width="2252" height="1380" alt="绑定完成" src="./image/部署-9.png" />
 
 ### 6. 重新部署
 
-完成以上步骤以后，点击Pages 项目 → **部署** → 点击项目最后一次部署条目后面的三个点··· → **重试部署**，等待部署完成即可访问。
+完成以上步骤以后，点击Pages 项目 → **部署** → 点击项目最后一次部署条目后面的三个点··· → **重试部署**，等待部署完成即可访问。（如下图）
 
+<img width="2252" height="1380" alt="重新部署" src="./image/部署-10.png" />
 
 ---
 
