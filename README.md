@@ -107,7 +107,9 @@ https://navhub.niceone2.ccwu.cc
 <img width="2252" height="1380" alt="创建Workers KV" src="./image/部署-4.png" />
 
 3. 创建完成以后会自动来到“KV 对”页面，添加两个条目，用于设置管理后台的 用户名 和 密码。（如下图）
+
    -第一条：密钥框输入`admin_username`  值：（可自定义）【这个就是后台管理员的用户名】
+
    -第二条：密钥框输入`admin_password`  值：（可自定义）【这个就是后台管理员密码】
 
 <img width="2252" height="1380" alt="创建后台参数" src="./image/部署-5.png" />  
