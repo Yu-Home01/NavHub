@@ -178,9 +178,9 @@ https://navhub.niceone2.ccwu.cc
 
 ---
 
-## 📄 License
+## 📄 许可证
 
-MIT
+本项目采用 [MIT](LICENSE) 许可证。
 
 ---
 
@@ -189,6 +189,8 @@ MIT
 - [iori-nav](https://github.com/jy02739244/iori-nav) — 原始项目
 - [CloudNav-Oorz](https://github.com/oorzc/CloudNav) — 参考项目
 - [KIMI](https://kimi.moonshot.cn)— 主导技术实现与功能开发
+
+---
 
 ## 📞 联系方式
 
